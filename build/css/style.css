@@ -117,11 +117,13 @@ button:hover {
       font-size: 25px; } }
 
 @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  .content h1 {
-    font-size: 35px;
-    margin-top: 100px; }
-  .content p, .content b {
-    font-size: 12px; }
+  .content {
+    background-color: rgba(251, 247, 250, 0.47); }
+    .content h1 {
+      font-size: 35px;
+      margin-top: 100px; }
+    .content p, .content b {
+      font-size: 15px; }
   .s1 {
     background: transition; } }
 
@@ -178,7 +180,7 @@ button:hover {
 
 @media all and (min-width: 769px) and (max-width: 992px) {
   .s2 {
-    min-height: 300px; }
+    min-height: 200px; }
     .s2__img {
       overflow: hidden;
       max-width: 50%; }
@@ -193,36 +195,38 @@ button:hover {
         margin-top: 50px;
         font-size: 30px; }
       .s2__text p {
-        font-size: 24px;
+        font-size: 18px;
         margin-left: 20px;
         margin-top: 30px; } }
 
 @media all and (min-width: 440px) and (max-width: 768px) {
   .s2 {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: inline-block;
     max-width: 100%;
     width: 100%;
-    min-height: 300px; }
+    min-height: 200px;
+    margin-bottom: 30px; }
     .s2__img {
       display: block;
       overflow: hidden;
-      max-width: 100%; }
+      max-width: 100%;
+      width: 100%; }
       .s2__img img {
         width: 100%;
         background-size: contain; }
     .s2__text {
       display: block;
       padding: 0;
-      max-width: 100%; }
+      max-width: 100%;
+      width: 100%; }
       .s2__text h2 {
         margin-left: 20px;
-        margin-top: 40px;
+        margin-top: 30px;
         font-size: 30px; }
       .s2__text p {
-        font-size: 24px;
+        font-size: 18px;
         margin-left: 20px;
-        margin-top: 50px; } }
+        margin-top: 20px; } }
 
 @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .s2 {
@@ -339,36 +343,40 @@ button:hover {
     padding: 0; }
     .s3__text h2 {
       margin: 20px;
-      font-size: 25px; }
-    .s3__text p {
-      margin: 30px;
       font-size: 20px; }
+    .s3__text p {
+      margin: 20px;
+      font-size: 16px; }
     .s3__text button {
       margin: 0 30px;
-      margin-bottom: 50px;
-      font-size: 15px; } }
+      margin-bottom: 40px;
+      font-size: 12px; } }
 
 @media all and (min-width: 440px) and (max-width: 768px) {
   .s3 {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "a b" "c d" "g g" "f ."; }
+    grid-template-areas: "a b" "c d" "g f"; }
     .s3__text {
       padding: 0; }
       .s3__text h2 {
-        margin: 50px;
-        font-size: 25px; }
+        margin-top: 30px;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        font-size: 18px; }
       .s3__text p {
-        margin: 50px;
-        font-size: 20px; }
+        margin: 30px;
+        margin-top: 20px;
+        font-size: 15px; }
       .s3__text button {
-        margin: 0 50px;
-        margin-bottom: 50px;
-        font-size: 20px; } }
+        padding: 10px;
+        margin: 0 20px;
+        margin-bottom: 10px;
+        font-size: 10px; } }
 
 @media all and (min-device-width: 320px) and (max-device-width: 480px) {
   .s3 {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "a b" "c d" "g g" "f ."; }
+    grid-template-areas: "a b" "c d" "g f"; }
     .s3__text {
       padding: 0; }
       .s3__text h2 {
@@ -696,6 +704,7 @@ button:hover {
     .s5 p {
       margin: 50px 0;
       margin-left: 50px;
+      margin-right: 20px;
       font-size: 30px;
       max-width: 100%; }
     .s5 button {
@@ -766,7 +775,7 @@ footer {
     footer .foot3 span:hover img {
       color: #000;
       background-color: #fff;
-      border-radius: 50%; }
+      border-radius: 10px; }
     footer .foot3 span img {
       color: #919191;
       font-family: "Font Awesome";
@@ -774,7 +783,7 @@ footer {
       font-weight: 800;
       line-height: 24px;
       margin-right: 15px;
-      border-radius: 50%;
+      border-radius: 10px;
       -webkit-transition: 0.5s;
       transition: 0.5s; }
       footer .foot3 span img:hover {
@@ -787,8 +796,7 @@ footer {
     border: none;
     width: 90%;
     height: 60px;
-    background-color: #909193;
-    opacity: 0.4;
+    background-color: rgba(144, 145, 147, 0.4);
     color: #FFF;
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
@@ -813,11 +821,20 @@ footer {
       background-color: #FFF;
       color: #000;
       opacity: 1; }
+      footer .foot4 input:hover::-webkit-input-placeholder {
+        color: #000; }
+      footer .foot4 input:hover::-moz-placeholder {
+        color: #000; }
+      footer .foot4 input:hover:-ms-input-placeholder {
+        color: #000; }
+      footer .foot4 input:hover::-ms-input-placeholder {
+        color: #000; }
+      footer .foot4 input:hover::placeholder {
+        color: #000; }
   footer .foot4 button {
     height: 60px;
     width: 8%;
-    background-color: #909193;
-    opacity: 0.4;
+    background-color: rgba(144, 145, 147, 0.4);
     color: #FFF;
     font-size: 14px;
     border: none; }
@@ -830,9 +847,9 @@ footer {
     display: -ms-flexbox;
     display: flex;
     margin-top: 20px;
-    background-color: #909193;
-    opacity: 0.4;
-    max-height: 60px; }
+    background-color: rgba(144, 145, 147, 0.4);
+    max-height: 60px;
+    opacity: 0.8; }
   footer .foot5 h2 {
     margin-top: 50px; }
   footer .foot5 div {
@@ -863,6 +880,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  grid-column-gap: 10px;
   grid-template-areas: "a b c c" "a b c c"; }
 
 .grid1 {
@@ -915,10 +933,20 @@ footer {
     .grid .foot4 .form {
       width: 75%;
       height: 100px; }
+    .grid .foot4 input::-webkit-input-placeholder {
+      font-size: 15px; }
+    .grid .foot4 input::-moz-placeholder {
+      font-size: 15px; }
+    .grid .foot4 input:-ms-input-placeholder {
+      font-size: 15px; }
+    .grid .foot4 input::-ms-input-placeholder {
+      font-size: 15px; }
+    .grid .foot4 input::placeholder {
+      font-size: 15px; }
     .grid .foot5 {
       padding-bottom: 100px; }
       .grid .foot5 div {
-        padding: 100px 80px; }
+        padding: 60px 40px; }
         .grid .foot5 div span {
           font-size: 30px; }
     .grid .grid3 {
@@ -934,7 +962,13 @@ footer {
       max-width: 100%;
       font-size: 12px; }
     .grid .foot3 img {
-      margin-right: 50px; }
+      display: inline-block;
+      width: 55px;
+      height: 55px;
+      margin-right: 30px;
+      top: 50%;
+      left: 50%;
+      font-size: 20px; }
     .grid .foot4 .form {
       width: 75%;
       height: 100px; }
